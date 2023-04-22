@@ -22,7 +22,7 @@ for x in range(0, GRID_ROW):
 
 To determine the most performant method for this specific use case, I tested the following techniques:
 
-1. Original `nested loop` method
+1. Using `nested loop` method
 2. Using `np.where`
 3. Using `np.vectorize`
 4. Using `NumPy broadcasting`
@@ -36,7 +36,7 @@ The performance of each method was measured using the `timeit` module in Python.
 
 Here are the results for the performance comparison:
 
-| Method                   | Average Execution Time (ms) |
+| Method                   | Average Execution Time (s) |
 | ------------------------ | --------------------------- |
 | <span style="color:#90f768">1. np.where Method</span>          | <span style="color:#90f768">0.0046s</span>                        |
 | <span style="color:#acb333">2. Broadcasting Method</span>       | <span style="color:#acb333">0.0077s</span>                         |
