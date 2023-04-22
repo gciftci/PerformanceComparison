@@ -1,3 +1,12 @@
+'''
+    @todo
+    - Seperate each test to its own file (they slow down each other - no GarbageCollector)
+    - Create a more clean "testing" enviroement.
+    - Add proper profiliing
+    - Modularize
+    - Implement into PyGame - Real use testing
+    
+ '''
 from timeit import timeit
 import pyfastnoisesimd as fns
 from numpy import array, zeros, where, vectorize,  sort, uint8
