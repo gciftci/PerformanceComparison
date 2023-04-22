@@ -22,13 +22,13 @@ for x in range(0, GRID_ROW):
 
 To determine the most performant method for this specific use case, I tested the following techniques:
 
-1. Original nested loop method
+1. Original `nested loop` method
 2. Using `np.where`
 3. Using `np.vectorize`
-4. Using NumPy broadcasting
-5. Using list comprehensions
-6. Using Numba JIT compilation
-7. Using joblib for parallelization
+4. Using `NumPy broadcasting`
+5. Using `list comprehensions`
+6. Using `Numba JIT compilation`
+7. Using `joblib for parallelization`
 
 The performance of each method was measured using the `timeit` module in Python. Each method was timed for ``4 runs`` and the average execution time was calculated.
 
