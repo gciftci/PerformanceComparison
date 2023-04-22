@@ -53,7 +53,7 @@ Here are the results for the performance comparison:
 Based on the test results, the most performant method for this specific use case is `np.where` or basically any `numpy low-level array manipulation`. It's important to note that the performance of these methods may vary depending on the size of the dataset and the complexity of the operations. Make sure to test these methods on your specific use case to determine which one is most suitable for your needs. 
 
 ## Noteworthy
-I couldnt make much use of `Numba JIT Method` even though i added some `"warumup"` function which almost burned my PC.
+I couldnt make much use of `Numba JIT Method` even though i added some `"warmup"` function which almost burned my PC.
 I had a lot of fun experementing!
 
 ![results](screen2.png)
