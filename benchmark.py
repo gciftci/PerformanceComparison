@@ -41,12 +41,12 @@ import src.utils as utils
 profiler = cProfile.Profile()
 
 # Settings
-DEBUG = True
+DEBUG = False
 
 # constants
 SIZE = (2560, 1440)
 
-NUM_TRIALS = 1
+NUM_TRIALS = 1000
 NUM_WARMUP = 1
 
 # Test-Case [x=20, y=70] => end_array[x,y][0]  = start_array[x, y] * 255
@@ -130,7 +130,6 @@ def display_results(methods: Dict[str, Dict[str, str]]) -> None:
         total_time, avg_time = benchmark(module.setup, module.process, start_array, end_array)
         results.append((method_name, avg_time, total_time))
         overall += total_time
-        break
 
     # Sort the results by average time
     sorted_results = sorted(results, key=lambda x: x[1])
