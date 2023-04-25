@@ -1,2 +1,8 @@
 /.venv*
 /logs/*
+benchmark.prof
+PerformanceComparison.code-workspace
+/src/__pycache*
+/src/in_progress
+/src/methods/__pycache*
+/__pycache*
