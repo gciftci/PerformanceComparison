@@ -41,7 +41,7 @@ import src.utils as utils
 profiler = cProfile.Profile()
 
 # Settings
-DEBUG = False
+DEBUG = True
 
 # constants
 SIZE = (2560, 1440)
@@ -130,6 +130,7 @@ def display_results(methods: Dict[str, Dict[str, str]]) -> None:
         total_time, avg_time = benchmark(module.setup, module.process, start_array, end_array)
         results.append((method_name, avg_time, total_time))
         overall += total_time
+        break
 
     # Sort the results by average time
     sorted_results = sorted(results, key=lambda x: x[1])
